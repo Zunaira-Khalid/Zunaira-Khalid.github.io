@@ -1,0 +1,596 @@
+
+/* ==============================
+   ZUNAIRA KHALID - PERSONAL SITE
+   ============================== */
+
+:root {
+    --purple: #35104F;
+    --soft-purple: #493653;
+    --pink: #E7A0BD;
+    --dark-pink: #B83D70;
+    --pista: #C9DDB0;
+    --teal: #258F91;
+    --yellow: #F2D15C;
+    --grey: #BDBDC5;
+    --white: #FFFFFF;
+    --cream: #FAF5EF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--soft-purple);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--purple);
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: var(--purple);
+}
+
+.logo {
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--pink);
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--yellow);
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 570px;
+    padding: 110px 10%;
+    background: var(--purple);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero .eyebrow {
+    color: var(--yellow);
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: clamp(42px, 6vw, 76px);
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--pink);
+    font-style: italic;
+}
+
+.hero-description {
+    max-width: 480px;
+    color: #F1E8F2;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.main-button {
+    display: inline-block;
+    background: var(--pink);
+    color: var(--purple);
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: var(--yellow);
+    transform: translateY(-3px);
+}
+
+.hero-decoration {
+    width: 260px;
+    height: 260px;
+    border: 2px solid var(--pink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 5%;
+}
+
+.hero-circle {
+    width: 175px;
+    height: 175px;
+    background: var(--teal);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.hero-star {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 45px;
+    color: var(--yellow);
+}
+
+.hero-note {
+    position: absolute;
+    bottom: 15px;
+    right: -35px;
+    color: var(--pink);
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 95px 10%;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading .eyebrow {
+    color: var(--teal);
+}
+
+.section-heading h2 {
+    font-size: clamp(34px, 4vw, 50px);
+}
+
+.section-heading h2 span {
+    color: var(--dark-pink);
+    font-style: italic;
+}
+
+.section-subtitle {
+    margin-top: 12px;
+    color: var(--soft-purple);
+}
+
+/* ABOUT ME */
+
+.about {
+    background: var(--cream);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 17px;
+}
+
+.about-text .intro {
+    color: var(--dark-pink);
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.language-note {
+    margin-top: 30px;
+    padding: 18px;
+    background: var(--pista);
+    border-left: 5px solid var(--teal);
+    color: var(--purple);
+}
+
+.language-note span {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.about-image {
+    min-height: 350px;
+}
+
+.about-caption {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    color: var(--dark-pink);
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* PHOTO PLACEHOLDERS */
+
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--pink), var(--teal));
+    color: var(--purple);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 8px solid var(--white);
+    box-shadow: 0 12px 30px rgba(53, 16, 79, 0.13);
+}
+
+/* INTERESTS */
+
+.interests {
+    background: var(--purple);
+}
+
+.interests .section-heading .eyebrow {
+    color: var(--yellow);
+}
+
+.interests .section-heading h2 {
+    color: var(--white);
+}
+
+.interests .section-heading h2 span {
+    color: var(--pink);
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.interest-card {
+    min-height: 260px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.interest-card:hover {
+    transform: translateY(-8px);
+}
+
+.purple-card {
+    background: #745080;
+    color: var(--white);
+}
+
+.pink-card {
+    background: var(--pink);
+    color: var(--purple);
+}
+
+.teal-card {
+    background: #A8D5CF;
+    color: var(--purple);
+}
+
+.yellow-card {
+    background: var(--yellow);
+    color: var(--purple);
+}
+
+.card-number {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card-symbol {
+    font-size: 38px;
+    margin: 18px 0;
+}
+
+.interest-card h3 {
+    color: inherit;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.interest-card p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* TWO WORLDS */
+
+.world {
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.world-content .eyebrow {
+    color: var(--teal);
+}
+
+.world-content h2 {
+    font-size: clamp(35px, 4vw, 52px);
+    margin-bottom: 22px;
+}
+
+.world-content h2 span {
+    color: var(--dark-pink);
+    font-style: italic;
+}
+
+.world-content p:last-child {
+    max-width: 500px;
+}
+
+.world-image {
+    min-height: 320px;
+    background: linear-gradient(135deg, var(--pista), var(--pink));
+}
+
+/* TRAVEL WISHLIST */
+
+.travel {
+    background: var(--pink);
+}
+
+.travel .section-heading .eyebrow {
+    color: var(--purple);
+}
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.travel-card {
+    background: var(--cream);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.travel-card:hover {
+    transform: translateY(-7px);
+}
+
+.travel-image {
+    min-height: 230px;
+    border: none;
+    box-shadow: none;
+    background: linear-gradient(135deg, var(--teal), var(--pista));
+}
+
+.travel-info {
+    padding: 22px;
+}
+
+.travel-info span {
+    color: var(--teal);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.travel-info h3 {
+    margin: 8px 0;
+    font-size: 26px;
+}
+
+.travel-info p {
+    font-size: 13px;
+}
+
+/* THE LITTLE THINGS */
+
+.little-things {
+    background: var(--purple);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.little-text .eyebrow {
+    color: var(--yellow);
+}
+
+.little-text h2 {
+    color: var(--white);
+    font-size: clamp(35px, 4vw, 50px);
+    margin-bottom: 25px;
+}
+
+.little-text p {
+    color: #F1E8F2;
+    margin-bottom: 18px;
+}
+
+.little-image {
+    min-height: 350px;
+    background: linear-gradient(135deg, var(--yellow), var(--pink));
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 75px 10% 25px;
+    background: var(--cream);
+    text-align: center;
+}
+
+.footer .eyebrow {
+    color: var(--teal);
+}
+
+.footer h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    margin-bottom: 15px;
+}
+
+.footer h2 span {
+    color: var(--dark-pink);
+}
+
+.footer > p:not(.eyebrow) {
+    margin-bottom: 30px;
+}
+
+.back-to-top {
+    display: inline-block;
+    background: var(--purple);
+    color: var(--white);
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.back-to-top:hover {
+    background: var(--dark-pink);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--grey);
+    margin-top: 60px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--soft-purple);
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding: 80px 8%;
+    }
+
+    .hero-decoration {
+        width: 180px;
+        height: 180px;
+        margin-right: 0;
+    }
+
+    .hero-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-content,
+    .world,
+    .little-things {
+        grid-template-columns: 1fr;
+    }
+
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .travel-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .navbar {
+        padding: 18px 6%;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 75px 7%;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .section {
+        padding: 65px 7%;
+    }
+
+    .interest-grid,
+    .travel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 60px 7% 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
