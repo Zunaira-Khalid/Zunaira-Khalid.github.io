@@ -594,3 +594,20 @@ a {
         gap: 10px;
     }
 }
+/* Two Worlds photo */
+.world-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    min-height: auto;
+}
+
+.world-image img {
+    width: 100%;
+    max-width: 320px;
+    max-height: 400px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
