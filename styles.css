@@ -625,3 +625,50 @@ a {
     object-fit: cover;
     display: block;
 }
+
+/* ABOUT ME - PARK PHOTO */
+
+.about-image {
+    width: 100%;
+    height: 390px;
+    min-height: 0;
+    overflow: hidden;
+    border: 8px solid var(--white);
+    box-shadow: 0 12px 30px rgba(53, 16, 79, 0.13);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* THE LITTLE THINGS - BEACH PHOTO */
+
+.little-image {
+    width: 100%;
+    height: 390px;
+    min-height: 0;
+    overflow: hidden;
+    border: 8px solid var(--white);
+    box-shadow: 0 12px 30px rgba(53, 16, 79, 0.13);
+}
+
+.little-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* RESPONSIVE PHOTO SIZING */
+
+@media (max-width: 600px) {
+    .about-image,
+    .little-image {
+        height: 300px;
+    }
+}
